@@ -22,7 +22,7 @@
 }
 
 .heroContent {
-  background: url(../../images/hero/section-2-bg.png) no-repeat;
+  background: url(././images/hero/section-2-bg.png) no-repeat;
   background-size: cover;
   background-position: top;
   margin-top: 20px;
@@ -34,7 +34,7 @@
   }
   @media (min-width: $BrPT2) {
     & {
-      background: url(../../images/education/section-2-bg.svg) no-repeat;
+      background: url(././images/education/section-2-bg.svg) no-repeat;
       background-size: cover;
       background-position: top;
       min-height: 700px;
@@ -145,7 +145,7 @@
 
   &__name::before {
     display: none;
-    content: url(../../images/hero/arrowbak.png);
+    content: url(././images/hero/arrowbak.png);
     position: absolute;
     left: -67px;
     top: -15px;
