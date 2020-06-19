@@ -61,7 +61,7 @@
     }
     &::before {
       display: block;
-      content: url(../../images/giv/kids.svg);
+      content: url('../images/giv/kids.svg');
       position: absolute;
       z-index: -1;
       min-width: 320px;
