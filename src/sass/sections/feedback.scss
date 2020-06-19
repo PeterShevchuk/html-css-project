@@ -1,0 +1,56 @@
+.feedbackBlock {
+  margin-top: 55px;
+}
+
+.feedback {
+  &__img {
+    margin: 0 auto;
+  }
+  &__item {
+    max-width: 270px;
+    margin: 60px 250px;
+    padding: 60px 35px 55px;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__icon {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    & img {
+      margin: 0 auto;
+    }
+  }
+
+  &__title-name {
+    margin-bottom: 25px;
+    font-size: 21px;
+    font-family: $fff;
+    color: #000000;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $BrPT) {
+  .feedback {
+    &__item {
+      max-width: 380px;
+      margin: 60px 20px;
+    }
+  }
+}
+
+@media (min-width: $BrPD) {
+  .feedback {
+    &__list {
+      margin-top: 86px;
+      margin-left: 85px;
+    }
+    & .container {
+      max-width: 1260px;
+    }
+  }
+}

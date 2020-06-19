@@ -1,0 +1,171 @@
+.heroBlock {
+  &__question {
+    font-size: 30px;
+    font-family: 'HelveticaNeueCyr';
+    color: rgb(232, 232, 242);
+    line-height: 36px;
+    @media (min-width: $BrPT) {
+      & {
+        font-size: 60px;
+        line-height: 72px;
+        padding-bottom: 20px;
+      }
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        font-size: 90px;
+        line-height: 100px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+.heroContent {
+  background: url(../../images/hero/section-2-bg.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: 20px;
+  min-height: 1150px;
+  @media (min-width: $BrPT) {
+    & {
+      min-height: 1210px;
+    }
+  }
+  @media (min-width: $BrPT2) {
+    & {
+      background: url(../../images/education/section-2-bg.svg) no-repeat;
+      background-size: cover;
+      background-position: top;
+      min-height: 700px;
+    }
+  }
+}
+
+.heroMenu {
+  padding-top: 60px;
+  @media (min-width: $BrPT) {
+    & {
+      padding-top: 120px;
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 20px 0;
+    }
+  }
+  @media (min-width: $BrPT2) {
+    & {
+      grid-gap: 30px;
+      -ms-grid-columns: 1fr 30px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__list {
+    @media (min-width: $BrPT) {
+      & {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 60px 1fr;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        -ms-grid-column-align: center;
+        justify-self: center;
+        grid-gap: 0 60px;
+      }
+    }
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    width: 135px;
+    height: 135px;
+    @media (min-width: $BrPT) {
+      & {
+        margin: 0 31px 0;
+        width: 227px;
+        height: 227px;
+      }
+    }
+  }
+  &__leyout {
+    @media (min-width: $BrPT) {
+      & {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-row-align: center;
+        align-self: center;
+        grid-gap: 30px;
+      }
+    }
+  }
+  &__name {
+    font-size: 20px;
+    font-family: 'Mistral';
+    color: rgb(237, 198, 90);
+    line-height: 22px;
+    text-shadow: 0;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    @media (min-width: $BrPT) {
+      & {
+        -ms-grid-row: 2;
+        grid-row: 2;
+        position: relative;
+        text-align: left;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+  }
+  .heroMenu__list:hover .heroMenu__name {
+    text-shadow: 7.5px 12.99px 24px;
+    background: -o-linear-gradient(
+      left,
+      rgba(222, 71, 236, 1) 0%,
+      rgba(117, 168, 249, 1) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(222, 71, 236, 1)),
+      to(rgba(117, 168, 249, 1))
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(222, 71, 236, 1) 0%,
+      rgba(117, 168, 249, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__name::before {
+    display: none;
+    content: url(../../images/hero/arrowbak.png);
+    position: absolute;
+    left: -67px;
+    top: -15px;
+    @media (min-width: $BrPT) {
+      & {
+        display: block;
+      }
+    }
+  }
+  &__sub {
+    font-size: 16px;
+    font-family: 'HelveticaNeueCyr';
+    color: rgb(44, 44, 44);
+    line-height: 30px;
+    @media (min-width: $BrPT) {
+      & {
+        text-align: left;
+        font-size: 23px;
+        line-height: 35px;
+      }
+    }
+  }
+}
